@@ -18,6 +18,8 @@ def get_monthly_ridership_data():
     df['month'] = df['date'].dt.month
     df['month_name'] = df['date'].dt.strftime('%B')
 
+    df['fiscal_year'] = df['date'].apply(calculate_fiscal_year_from_date)
+
  
     return df
 
@@ -33,3 +35,12 @@ def get_cost_data():
 
  
     return df
+
+
+
+def calculate_fiscal_year_from_date(date):
+    # Fiscal year starts on July 1st
+    if date.month >= 7:
+        return date.year + 1
+    else:
+        return date.year

@@ -41,11 +41,11 @@ df = df[df['Category'].isin(selected_categories)]
 st.write('Total cost per year')
 #show chart with total cost per year divide costs by category
 
-st.bar_chart(df[['Year', 'Description', 'Category', 'Amount', ]], x='Year', y='Amount', color='Category')
+st.bar_chart(df[['Fiscal Year', 'Description', 'Category', 'Amount', ]], x='Fiscal Year', y='Amount', color='Category')
 
 
 
-cost_detail_by_year = df.groupby(['Year', 'Description'])['Amount'].sum().reset_index().pivot(index='Description', columns='Year', values='Amount').fillna(0)
+cost_detail_by_year = df.groupby(['Fiscal Year', 'Description'])['Amount'].sum().reset_index().pivot(index='Description', columns='Fiscal Year', values='Amount').fillna(0)
 
 
 st.dataframe(cost_detail_by_year)

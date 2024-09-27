@@ -22,8 +22,6 @@ st.set_page_config(
 
 df = dataloader.get_monthly_ridership_data()
 
-# -----------------------------------------------------------------------------
-# Draw the actual page
 
 # Set the title that appears at the top of the page.
 '''
@@ -78,7 +76,6 @@ with st.sidebar:
         & (from_year <= df['Year'])
         & (df['month_name'].isin(selected_month))
     ]
-
 
 
 first_year = df[df['Year'] == from_year]

@@ -37,6 +37,30 @@ def get_cost_data():
     return df
 
 
+@st.cache_data
+def get_cost_per_ride_data():
+    ridership = get_monthly_ridership_data()
+    costs = get_cost_data()
+
+    #group ridership data by fiscal year 
+    ridership = ridership.groupby(['fiscal_year'])['Riders'].sum().reset_index()
+    #group cost data by fiscal year
+    costs = costs.groupby(['Fiscal Year','Category'])['Amount'].sum().reset_index()
+
+    #join the two dataframes
+    costs = costs.merge(ridership, left_on='Fiscal Year', right_on='fiscal_year', how='outer')
+
+    #calculate cost per ride
+    costs['cost_per_ride'] = costs['Amount']/costs['Riders']
+
+    #round to 2 decimal places
+    costs['cost_per_ride'] = costs['cost_per_ride'].round(2)
+
+
+
+    return costs
+
+
 
 def calculate_fiscal_year_from_date(date):
     # Fiscal year starts on July 1st

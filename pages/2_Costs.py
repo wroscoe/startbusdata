@@ -49,3 +49,13 @@ cost_detail_by_year = df.groupby(['Fiscal Year', 'Description'])['Amount'].sum()
 
 
 st.dataframe(cost_detail_by_year)
+
+
+st.write('Total cost per category')
+ridership_df = dataloader.get_cost_per_ride_data()
+
+ridership_df = ridership_df.pivot(index='Category', columns='Fiscal Year', values='cost_per_ride').fillna(0)
+ridership_df = ridership_df.style \
+  .format('$ {:.2f}', precision=2) \
+
+st.table(ridership_df, )

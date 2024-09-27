@@ -22,7 +22,6 @@ df = dataloader.get_cost_data()
 
 with st.sidebar:
 
-
     #filter by category
     categories = df['Category'].unique()
     selected_categories = st.multiselect(
@@ -32,8 +31,21 @@ with st.sidebar:
 
 
 
+#update the dataframe to only include the selected categories
+df = df[df['Category'].isin(selected_categories)]
+
+
+
 # Chart shoing the total cost per year
 
 st.write('Total cost per year')
-yearly_costs = df.groupby('Year')['Amount'].sum()
-st.bar_chart(yearly_costs)
+#show chart with total cost per year divide costs by category
+
+st.bar_chart(df[['Year', 'Description', 'Category', 'Amount', ]], x='Year', y='Amount', color='Category')
+
+
+
+cost_detail_by_year = df.groupby(['Year', 'Description'])['Amount'].sum().reset_index().pivot(index='Description', columns='Year', values='Amount').fillna(0)
+
+
+st.dataframe(cost_detail_by_year)

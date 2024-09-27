@@ -71,60 +71,26 @@ with st.sidebar:
         & (from_year <= gdp_df['Year'])
     ]
 
-st.header('GDP over time', divider='gray')
-
-''
-
-st.bar_chart(
-    filtered_gdp_df,
-    x='Year',
-    y='Riders',
-    color='Route',
-    stack=False,
-)
-
-''
-''
 
 
 first_year = gdp_df[gdp_df['Year'] == from_year]
 last_year = gdp_df[gdp_df['Year'] == to_year]
 
-st.header(f'GDP in {to_year}', divider='gray')
+st.header(f'Monthly Ridership Data', divider='gray')
 
 ''
 
 # Create an Altair bar chart
 bar_chart = alt.Chart(filtered_gdp_df).mark_bar().encode(
     xOffset='Year:O',
-    x=alt.X('Route:O', axis=None),
+    x=alt.X('Route:O', axis=alt.Axis(labelAngle=-65)),
     y=alt.Y('Riders', title='Riders'),
-    color='Year:N'  # Optional: Adds different colors for each bar
+    color='Year:O'  # Optional: Adds different colors for each bar
 ).properties(
-    title='Sample Bar Chart'
-).configure_legend(
-    orient="bottom", columns=4
+    title='Sample Bar Chart',
+    height=600
 ).configure_view(
     stroke=None,
 )
 st.altair_chart(bar_chart, use_container_width=True)
-
-
-
-# Create an Altair bar chart
-bar_chart2 = alt.Chart(filtered_gdp_df).mark_bar().encode(
-    xOffset='Route:O',
-    x=alt.X('Year:O', axis=None),
-    y=alt.Y('Riders', title='Riders'),
-    color='Route:N'  # Optional: Adds different colors for each bar
-).properties(
-    title='Sample Bar Chart'
-).configure_legend(
-    orient="bottom", columns=4
-).configure_view(
-    stroke=None,
-)
-
-
-st.altair_chart(bar_chart2, use_container_width=True)
 

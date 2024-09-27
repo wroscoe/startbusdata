@@ -2,11 +2,16 @@ import streamlit as st
 import pandas as pd
 import math
 from pathlib import Path
+from config import DATA_DIR
+
+import altair as alt
+
+
 
 # Set the title and favicon that appear in the Browser's tab bar.
 st.set_page_config(
-    page_title='GDP dashboard',
-    page_icon=':earth_americas:', # This is an emoji shortcode. Could be a URL too.
+    page_title='START Monthly Ridership',
+    page_icon=':bus:', # This is an emoji shortcode. Could be a URL too.
 )   
 
 # -----------------------------------------------------------------------------
@@ -14,15 +19,9 @@ st.set_page_config(
 
 @st.cache_data
 def get_gdp_data():
-    """Grab GDP data from a CSV file.
-
-    This uses caching to avoid having to read the file every time. If we were
-    reading from an HTTP endpoint instead of a file, it's a good idea to set
-    a maximum age to the cache with the TTL argument: @st.cache_data(ttl='1d')
-    """
 
     # Instead of a CSV on disk, you could read from an HTTP endpoint here too.
-    DATA_FILENAME = Path(__file__).parent/'data/start_monthly_ridership_data.csv'
+    DATA_FILENAME = DATA_DIR/'start_monthly_ridership_data.csv'
     raw_gdp_df = pd.read_csv(DATA_FILENAME)
 
 
@@ -35,46 +34,42 @@ gdp_df = get_gdp_data()
 
 # Set the title that appears at the top of the page.
 '''
-# :earth_americas: GDP dashboard
+# :bus: START Monthly Ridership
 
-Browse GDP data from the [World Bank Open Data](https://data.worldbank.org/) website. As you'll
-notice, the data only goes to 2022 right now, and datapoints for certain years are often missing.
-But it's otherwise a great (and did I mention _free_?) source of data.
+Browse and filter the START Monthly Ridership data.
 '''
 
 # Add some spacing
 ''
 ''
 
-min_value = gdp_df['Year'].min()
-max_value = gdp_df['Year'].max()
+with st.sidebar:
+    min_value = gdp_df['Year'].min()
+    max_value = gdp_df['Year'].max()
 
-from_year, to_year = st.slider(
-    'Which years are you interested in?',
-    min_value=min_value,
-    max_value=max_value,
-    value=[min_value, max_value])
+    from_year, to_year = st.slider(
+        'Which years are you interested in?',
+        min_value=min_value,
+        max_value=max_value,
+        value=[min_value, max_value])
 
-routes = gdp_df['Route'].unique()
+    routes = gdp_df['Route'].unique()
 
-if not len(routes):
-    st.warning("Select at least one country")
+    if not len(routes):
+        st.warning("Select at least one country")
 
-selected_routes = st.multiselect(
-    'Which routes would you like to view?',
-    routes,
-    routes)
+    selected_routes = st.multiselect(
+        'Which routes would you like to view?',
+        routes,
+        routes)
 
-''
-''
-''
 
-# Filter the data
-filtered_gdp_df = gdp_df[
-    (gdp_df['Route'].isin(selected_routes))
-    & (gdp_df['Year'] <= to_year)
-    & (from_year <= gdp_df['Year'])
-]
+    # Filter the data
+    filtered_gdp_df = gdp_df[
+        (gdp_df['Route'].isin(selected_routes))
+        & (gdp_df['Year'] <= to_year)
+        & (from_year <= gdp_df['Year'])
+    ]
 
 st.header('GDP over time', divider='gray')
 
@@ -98,3 +93,38 @@ last_year = gdp_df[gdp_df['Year'] == to_year]
 st.header(f'GDP in {to_year}', divider='gray')
 
 ''
+
+# Create an Altair bar chart
+bar_chart = alt.Chart(filtered_gdp_df).mark_bar().encode(
+    xOffset='Year:O',
+    x=alt.X('Route:O', axis=None),
+    y=alt.Y('Riders', title='Riders'),
+    color='Year:N'  # Optional: Adds different colors for each bar
+).properties(
+    title='Sample Bar Chart'
+).configure_legend(
+    orient="bottom", columns=4
+).configure_view(
+    stroke=None,
+)
+st.altair_chart(bar_chart, use_container_width=True)
+
+
+
+# Create an Altair bar chart
+bar_chart2 = alt.Chart(filtered_gdp_df).mark_bar().encode(
+    xOffset='Route:O',
+    x=alt.X('Year:O', axis=None),
+    y=alt.Y('Riders', title='Riders'),
+    color='Route:N'  # Optional: Adds different colors for each bar
+).properties(
+    title='Sample Bar Chart'
+).configure_legend(
+    orient="bottom", columns=4
+).configure_view(
+    stroke=None,
+)
+
+
+st.altair_chart(bar_chart2, use_container_width=True)
+

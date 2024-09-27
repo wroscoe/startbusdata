@@ -1,0 +1,200 @@
+Description,Year,Status,Amount,CATEGORY
+Salaries & Wages - Regular,FY2018,Actual,545930,OPS
+Salaries & Wages - Regular,FY2019,Actual,590859,OPS
+Salaries & Wages - Part-Time,FY2018,Actual,875922,OPS
+Salaries & Wages - Part-Time,FY2019,Actual,1050809,OPS
+Buyout - Compensated Absences,FY2018,Actual,6715,OPS
+Buyout - Compensated Absences,FY2019,Actual,6229,OPS
+Overtime,FY2018,Actual,127389,OPS
+Overtime,FY2019,Actual,157944,OPS
+Holiday Pay,FY2018,Actual,0,OPS
+Holiday Pay,FY2019,Actual,3364,OPS
+FICA & Medicare,FY2018,Actual,116984,OPS
+FICA & Medicare,FY2019,Actual,136145,OPS
+Health Insurance,FY2018,Actual,261292,OPS
+Health Insurance,FY2019,Actual,322812,OPS
+Vision Insurance,FY2018,Actual,1839,OPS
+Vision Insurance,FY2019,Actual,1910,OPS
+Dental Insurance,FY2018,Actual,8410,OPS
+Dental Insurance,FY2019,Actual,8840,OPS
+Wyoming Retirement,FY2018,Actual,87802,OPS
+Wyoming Retirement,FY2019,Actual,102032,OPS
+Workers' Compensation,FY2018,Actual,33948,OPS
+Workers' Compensation,FY2019,Actual,31374,OPS
+State Unemployment,FY2018,Actual,8090,OPS
+State Unemployment,FY2019,Actual,5915,OPS
+Disability/Life Insurance,FY2018,Actual,5731,OPS
+Disability/Life Insurance,FY2019,Actual,5970,OPS
+Uniforms,FY2018,Actual,137,OPS
+Uniforms,FY2019,Actual,162,OPS
+Small Tools & Equipment <$10K,FY2018,Actual,844,OPS
+Small Tools & Equipment <$10K,FY2019,Actual,1520,OPS
+Radio Services,FY2018,Actual,8427,OPS
+Radio Services,FY2019,Actual,10410,OPS
+Repair & Maint - Vehicles,FY2018,Actual,9485,OPS
+Repair & Maint - Vehicles,FY2019,Actual,13937,OPS
+Repair & Maint - Shop Parts,FY2018,Actual,376632,OPS
+Repair & Maint - Shop Parts,FY2019,Actual,475965,OPS
+Repair & Maint - Shop Labor,FY2018,Actual,218517,OPS
+Repair & Maint - Shop Labor,FY2019,Actual,290704,OPS
+Petroleum Products,FY2018,Actual,407339,OPS
+Petroleum Products,FY2019,Actual,463881,OPS
+Trash Collections,FY2018,Actual,9001,OPS
+Trash Collections,FY2019,Actual,6781,OPS
+Contract Maintenance,FY2018,Actual,160,OPS
+Contract Maintenance,FY2019,Actual,3765,OPS
+Grand Targhee Grant Administration,FY2018,Actual,0,OPS
+Grand Targhee Grant Administration,FY2019,Actual,73160,OPS
+Liability Insurance,FY2018,Actual,47070,OPS
+Liability Insurance,FY2019,Actual,52299,OPS
+Facility Lease,FY2018,Actual,9349,OPS
+Facility Lease,FY2019,Actual,17758,OPS
+Bus Leases,FY2018,Actual,0,OPS
+Bus Leases,FY2019,Actual,167400,OPS
+Bike Share,FY2018,Actual,51791,OPS
+Bike Share,FY2019,Actual,61762,OPS
+Salaries & Wages - Regular,FY2020,Actual,688543,OPS
+Salaries & Wages - Regular,FY2021,Actual,593564,OPS
+Salaries & Wages - Part-Time,FY2020,Actual,984892,OPS
+Salaries & Wages - Part-Time,FY2021,Actual,763415,OPS
+Buyout - Compensated Absences,FY2020,Actual,4370,OPS
+Buyout - Compensated Absences,FY2021,Actual,8635,OPS
+Overtime,FY2020,Actual,45307,OPS
+Overtime,FY2021,Actual,72422,OPS
+Holiday Pay,FY2020,Actual,8041,OPS
+Holiday Pay,FY2021,Actual,7843,OPS
+FICA & Medicare,FY2020,Actual,129789,OPS
+FICA & Medicare,FY2021,Actual,108097,OPS
+Health Insurance,FY2020,Actual,407008,OPS
+Health Insurance,FY2021,Actual,398881,OPS
+Vision Insurance,FY2020,Actual,2727,OPS
+Vision Insurance,FY2021,Actual,2256,OPS
+Dental Insurance,FY2020,Actual,15572,OPS
+Dental Insurance,FY2021,Actual,7913,OPS
+Wyoming Retirement,FY2020,Actual,110628,OPS
+Wyoming Retirement,FY2021,Actual,96846,OPS
+Workers' Compensation,FY2020,Actual,25582,OPS
+Workers' Compensation,FY2021,Actual,12885,OPS
+State Unemployment,FY2020,Actual,7570,OPS
+State Unemployment,FY2021,Actual,19146,OPS
+Disability/Life Insurance,FY2020,Actual,6843,OPS
+Disability/Life Insurance,FY2021,Actual,5770,OPS
+Uniforms,FY2020,Actual,1872,OPS
+Uniforms,FY2021,Actual,0,OPS
+Small Tools & Equipment <$10K,FY2020,Actual,0,OPS
+Small Tools & Equipment <$10K,FY2021,Actual,1023,OPS
+Radio Services,FY2020,Actual,1070,OPS
+Radio Services,FY2021,Actual,12043,OPS
+TV Shuttle - Salt Lake Express,FY2020,Actual,0,OPS
+TV Shuttle - Salt Lake Express,FY2021,Actual,222600,OPS
+Microtransit - East Jackson,FY2020,Actual,0,OPS
+Microtransit - East Jackson,FY2021,Actual,0,OPS
+Microtransit - South Park,FY2020,Actual,0,OPS
+Microtransit - South Park,FY2021,Actual,0,OPS
+Repair & Maint - Vehicles,FY2020,Actual,11175,OPS
+Repair & Maint - Vehicles,FY2021,Actual,3658,OPS
+Repair & Maint - Shop Parts,FY2020,Actual,395556,OPS
+Repair & Maint - Shop Parts,FY2021,Actual,405786,OPS
+Repair & Maint - Shop Labor,FY2020,Actual,315383,OPS
+Repair & Maint - Shop Labor,FY2021,Actual,213358,OPS
+Petroleum Products,FY2020,Actual,375461,OPS
+Petroleum Products,FY2021,Actual,251211,OPS
+Trash Collections,FY2020,Actual,6753,OPS
+Trash Collections,FY2021,Actual,6946,OPS
+Grand Targhee Grant Administration,FY2020,Actual,125031,OPS
+Grand Targhee Grant Administration,FY2021,Actual,105033,OPS
+Liability Insurance,FY2020,Actual,52082,OPS
+Liability Insurance,FY2021,Actual,140401,OPS
+Facility Lease,FY2020,Actual,54021,OPS
+Facility Lease,FY2021,Actual,55112,OPS
+Bus & Battery Leases,FY2020,Actual,242562,OPS
+Bus & Battery Leases,FY2021,Actual,317301,OPS
+Bike Share,FY2020,Actual,62780,OPS
+Bike Share,FY2021,Actual,60762,OPS
+Salaries & Wages - Regular,FY2022,Actual,737151,OPS
+Salaries & Wages - Regular,FY2023,Estimated,950000,OPS
+Salaries & Wages - Regular,FY2024,Adopted,1508393,OPS
+Salaries & Wages - Part-Time,FY2022,Actual,712329,OPS
+Salaries & Wages - Part-Time,FY2023,Estimated,640000,OPS
+Salaries & Wages - Part-Time,FY2024,Adopted,1197866,OPS
+Buyout - Compensated Absences,FY2022,Actual,9971,OPS
+Buyout - Compensated Absences,FY2023,Estimated,25733,OPS
+Buyout - Compensated Absences,FY2024,Adopted,29008,OPS
+Overtime,FY2022,Actual,222156,OPS
+Overtime,FY2023,Estimated,172265,OPS
+Overtime,FY2024,Adopted,160000,OPS
+Holiday Pay,FY2022,Actual,17607,OPS
+Holiday Pay,FY2023,Estimated,28000,OPS
+Holiday Pay,FY2024,Adopted,30000,OPS
+FICA & Medicare,FY2022,Actual,128209,OPS
+FICA & Medicare,FY2023,Estimated,138924,OPS
+FICA & Medicare,FY2024,Adopted,223783,OPS
+Health Insurance,FY2022,Actual,470225,OPS
+Health Insurance,FY2023,Estimated,634740,OPS
+Health Insurance,FY2024,Adopted,525551,OPS
+Vision Insurance,FY2022,Actual,4703,OPS
+Vision Insurance,FY2023,Estimated,4431,OPS
+Vision Insurance,FY2024,Adopted,4366,OPS
+Dental Insurance,FY2022,Actual,24325,OPS
+Dental Insurance,FY2023,Estimated,21945,OPS
+Dental Insurance,FY2024,Adopted,21359,OPS
+Wyoming Retirement,FY2022,Actual,151638,OPS
+Wyoming Retirement,FY2023,Estimated,171000,OPS
+Wyoming Retirement,FY2024,Adopted,291436,OPS
+Workers' Compensation,FY2022,Actual,29149,OPS
+Workers' Compensation,FY2023,Estimated,63120,OPS
+Workers' Compensation,FY2024,Adopted,75910,OPS
+State Unemployment,FY2022,Actual,3358,OPS
+State Unemployment,FY2023,Estimated,9000,OPS
+State Unemployment,FY2024,Adopted,18627,OPS
+Disability/Life Insurance,FY2022,Actual,4299,OPS
+Disability/Life Insurance,FY2023,Estimated,14089,OPS
+Disability/Life Insurance,FY2024,Adopted,10460,OPS
+Uniforms,FY2022,Actual,2161,OPS
+Uniforms,FY2023,Estimated,3000,OPS
+Uniforms,FY2024,Adopted,7500,OPS
+Small Tools & Equipment <$10K,FY2022,Actual,1023,OPS
+Small Tools & Equipment <$10K,FY2023,Estimated,0,OPS
+Small Tools & Equipment <$10K,FY2024,Adopted,0,OPS
+Radio Services,FY2022,Actual,12043,OPS
+Radio Services,FY2023,Estimated,5500,OPS
+Radio Services,FY2024,Adopted,6000,OPS
+TV Shuttle - Salt Lake Express,FY2022,Actual,265106,OPS
+TV Shuttle - Salt Lake Express,FY2023,Estimated,840000,OPS
+TV Shuttle - Salt Lake Express,FY2024,Adopted,395500,OPS
+Microtransit - East Jackson,FY2022,Actual,449299,OPS
+Microtransit - East Jackson,FY2023,Estimated,950000,OPS
+Microtransit - East Jackson,FY2024,Adopted,1035925,OPS
+Microtransit - South Park,FY2022,Actual,0,OPS
+Microtransit - South Park,FY2023,Estimated,250000,OPS
+Microtransit - South Park,FY2024,Adopted,527075,OPS
+Repair & Maint - Vehicles,FY2022,Actual,3658,OPS
+Repair & Maint - Vehicles,FY2023,Estimated,1738,OPS
+Repair & Maint - Vehicles,FY2024,Adopted,6500,OPS
+Repair & Maint - Shop Parts,FY2022,Actual,276381,OPS
+Repair & Maint - Shop Parts,FY2023,Estimated,365218,OPS
+Repair & Maint - Shop Parts,FY2024,Adopted,408906,OPS
+Repair & Maint - Shop Labor,FY2022,Actual,189806,OPS
+Repair & Maint - Shop Labor,FY2023,Estimated,280000,OPS
+Repair & Maint - Shop Labor,FY2024,Adopted,384750,OPS
+Petroleum Products,FY2022,Actual,307667,OPS
+Petroleum Products,FY2023,Estimated,347950,OPS
+Petroleum Products,FY2024,Adopted,369132,OPS
+Trash Collections,FY2022,Actual,27655,OPS
+Trash Collections,FY2023,Estimated,56000,OPS
+Trash Collections,FY2024,Adopted,50000,OPS
+Grand Targhee Grant Administration,FY2022,Actual,102693,OPS
+Grand Targhee Grant Administration,FY2023,Estimated,153207,OPS
+Grand Targhee Grant Administration,FY2024,Adopted,298000,OPS
+Liability Insurance,FY2022,Actual,154295,OPS
+Liability Insurance,FY2023,Estimated,179738,OPS
+Liability Insurance,FY2024,Adopted,173692,OPS
+Facility Lease,FY2022,Actual,60699,OPS
+Facility Lease,FY2023,Estimated,96000,OPS
+Facility Lease,FY2024,Adopted,94800,OPS
+Bus & Battery Leases,FY2022,Actual,431547,OPS
+Bus & Battery Leases,FY2023,Estimated,490000,OPS
+Bus & Battery Leases,FY2024,Adopted,556800,OPS
+Bike Share,FY2022,Actual,60969,OPS
+Bike Share,FY2023,Estimated,68000,OPS
+Bike Share,FY2024,Adopted,75800,OPS

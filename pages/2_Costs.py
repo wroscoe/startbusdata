@@ -51,11 +51,24 @@ cost_detail_by_year = df.groupby(['Fiscal Year', 'Description'])['Amount'].sum()
 st.dataframe(cost_detail_by_year)
 
 
-st.write('Total cost per category')
+st.write('Total cost per ride. ')
 ridership_df = dataloader.get_cost_per_ride_data()
 
 ridership_df = ridership_df.pivot(index='Category', columns='Fiscal Year', values='cost_per_ride').fillna(0)
+# Remove Nan category
+ridership_df = ridership_df[ridership_df.index.notnull()]
+
+# remove nan year
+ridership_df = ridership_df.loc[:, ridership_df.columns.notnull()]
+
+#round column names to whole numbers and make them strings 
+ridership_df.columns = ridership_df.columns.astype(int).astype(str)
+
+#style only the cost columns to be currency
 ridership_df = ridership_df.style \
   .format('$ {:.2f}', precision=2) \
+
+#style year columns indexes to be whole numbers
+#ridership_df = ridership_df.format({col: "{:.0f}" for col in ridership_df.columns})
 
 st.table(ridership_df, )

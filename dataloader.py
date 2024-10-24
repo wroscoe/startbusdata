@@ -68,3 +68,10 @@ def calculate_fiscal_year_from_date(date):
         return date.year + 1
     else:
         return date.year
+
+
+@st.cache_data
+def get_on_demand_data():
+    DATA_FILENAME = DATA_DIR / 'ondemand.csv'
+    data = pd.read_csv(DATA_FILENAME)
+    return data

@@ -14,7 +14,10 @@ data = get_on_demand_data()
 
 # Create a Streamlit app
 st.title('Ride Heatmap Visualization')
-st.write('This app displays the June 2024 pickup and dropoff locations of on-demand rides as two different color heatmaps.')
+st.write('''
+This app displays the June 2024 pickup and dropoff locations 
+of on-demand rides as two different color heatmaps. The locations are rounded to the nearest 50 meters.
+''')
 
 # Hour selection in sidebar
 pickup_hours = st.sidebar.multiselect('Select Pickup Hour(s) (select between 0 and 23)', options=list(range(24)), default=[6, 7, 8])

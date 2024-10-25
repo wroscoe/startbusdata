@@ -16,7 +16,7 @@ data = get_on_demand_data()
 st.title('Ride Heatmap Visualization')
 st.write('''
 This app displays the June 2024 pickup and dropoff locations 
-of on-demand rides as two different color heatmaps. The locations are rounded to the nearest 50 meters.
+of on-demand rides as two different color heatmaps. The locations are randomized to the nearest 100 meters.
 ''')
 
 # Hour selection in sidebar

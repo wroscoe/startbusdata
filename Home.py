@@ -16,12 +16,14 @@ with st.sidebar:
 '''
 # :bus: START Data
 
-Welcome to the community run START Bus and Transit data site. 
+Welcome to the community run START Bus and Transit data site. The goal of this site is to make it easier 
+to browse the START data in order to find problems and solutions. 
 
-Our goal is to make it easier to browse the START data in order to find problems and solutions. 
-See the links in the sidebar to see data on [ridership](/Monthly_Ridership) and [financial](/Costs) data.
 
 '''
+
+st.info('''Use links in the left side menu to open reports on [ridership](/Monthly_Ridership), [financial](/Costs) and more.''')
+
 image_path = IMAGE_DIR/'landing_demo.png'
 
 st.image(str(image_path.absolute()), )

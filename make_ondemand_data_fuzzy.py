@@ -3,7 +3,7 @@ import math
 from config import DATA_DIR, HIDDEN_DATA_DIR
 
 # Define the grid size in meters
-grid_size_m = 50
+grid_size_m = 100
 
 def bin_to_grid(lat, lon, grid_size_m):
     # Approximate length of a degree of latitude in meters
